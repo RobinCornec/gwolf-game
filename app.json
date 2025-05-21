@@ -3,12 +3,13 @@
     "name": "gwolf-app",
     "slug": "gwolf-app",
     "version": "1.0.0",
+    "scheme": "gwolf",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/image.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/image.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,6 +17,9 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.robincornec.gwolf",
+      "versionCode": 4,
+      "permissions": [],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -24,6 +28,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-localization"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f00cad9b-9812-4e7e-b485-a079db0931d5"
+      }
+    },
+    "owner": "robincornec"
   }
 }
